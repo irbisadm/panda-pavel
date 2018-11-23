@@ -1,0 +1,495 @@
+
+.pavr_block {
+  z-index: 15;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateX(100%);
+  background: rgba(1,1,1,0);
+  opacity: 0;
+  transition: transform 1s cubic-bezier(.9,.66,.51,1.33) 1.2s, opacity 0.7s ease 1s,  background 1s ease 0s;
+  &.active{
+    transition: transform 1s cubic-bezier(.9,.66,.51,1.33), opacity 0.7s ease, background 1s ease 1s;
+    transform: translateX(0%);
+    opacity: 1;
+    background: rgba(1,1,1,0.5);
+  }
+  .pavr_t {
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    width: 10.875rem;
+    height: 3rem;
+    right: 0.8rem;
+    animation: pawrFade ease 2.2s;
+    animation-iteration-count: 1;
+    z-index: 5;
+    .pavr_t_title {
+      position: absolute;
+      width: 10.875rem;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.8;
+      bottom: 2.5rem;
+    }
+    .pavr_t_descr {
+      position: absolute;
+      text-align: center;
+      width: 10.875rem;
+      bottom: 0.8rem;
+      color: rgb(255, 255, 255);
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 2.57;
+    }
+  }
+  .pavr_av_block {
+    cursor: pointer;
+    position: absolute;
+    content: '';
+    right: 1rem;
+    bottom: 110px;
+    border-radius: 50%;
+    width: 10.875rem;
+    height: 10.875rem;
+    animation: pawrStart ease 2s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    .pavr_av_block_img {
+      opacity: 1;
+      border-radius: 50%;
+      z-index: 6;
+      width: 8.125rem;
+      height: 8.125rem;
+      position: absolute;
+      right: 1.375rem;
+      top: 1.375rem;
+      animation: pawrFade ease 2s;
+      animation-iteration-count: 1;
+      transform-origin: 50% 50%;
+      background: #000 url('../assets/lizard_pawr.jpg') no-repeat center center/cover;
+      @media (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+        background: #000 url('../assets/lizard_pawr@2x.jpg') no-repeat center center/cover;
+      }
+    }
+    &.pavr_av_bouncing {
+      .pavr_av_block_img {
+        animation: pawrRotateLong ease 16s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+      }
+      .pavr_av_block_c1 {
+        animation: pawrBounceLong ease 16s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+      }
+      .pavr_av_block_c2 {
+        animation: pawrBounceLong ease 16s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+      }
+      .pavr_av_block_c3 {
+        animation: pawrBounceLong ease 16s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+      }
+      .pavr_av_block_c4 {
+        animation: pawrBounceLong ease 16s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+      }
+      .pavr_av_block_c5 {
+        animation: pawrBounceLong ease 16s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+      }
+    }
+    .pavr_av_block_c1 {
+      z-index: 1;
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-radius: 50%;
+      width: 10.875rem;
+      height: 10.875rem;
+      background-color: rgb(155, 169, 187);
+      opacity: 0.15;
+    }
+    .pavr_av_block_c2 {
+      z-index: 2;
+      position: absolute;
+      right: 0.75rem;
+      top: 0.75rem;
+      border-radius: 50%;
+      width: 9.375rem;
+      height: 9.375rem;
+      background-color: rgb(155, 169, 187);
+      opacity: 0.42;
+    }
+    .pavr_av_block_c3 {
+      z-index: 3;
+      position: absolute;
+      height: 13rem;
+      width: 13rem;
+      box-shadow: 0 0 1.563rem 0.438rem rgb(18, 14, 30);
+      background-color: rgb(11, 0, 49);
+      opacity: 0.17;
+      top: -1.0625rem;
+      right: -1.0625rem;
+      border-radius: 50%;
+    }
+    .pavr_av_block_c4 {
+      z-index: 4;
+      position: absolute;
+      width: 18.75rem;
+      height: 18.75rem;
+      box-shadow: 0.125rem 0.188rem 1.188rem 0.625rem rgba(18, 14, 30, 0.88);
+      background-color: rgb(11, 0, 49);
+      opacity: 0.21;
+
+      top: -3.9375rem;
+      right: -3.9375rem;
+      border-radius: 50%;
+    }
+    .pavr_av_block_c5 {
+      z-index: 5;
+      position: absolute;
+      width: 24.25rem;
+      height: 24.25rem;
+      background-color: rgb(11, 0, 49);
+      opacity: 0.05;
+      top: -6.6875rem;
+      right: -6.6875rem;
+      border-radius: 50%;
+    }
+  }
+  .pavr_text_area {
+    z-index: 10;
+    position: absolute;
+    right: 13rem;
+    bottom: 140px;
+    .pavr_over_block {
+      display: none;
+    }
+    .pavr_title_block {
+      display: none;
+    }
+    .pavr_btn_block {
+      border-top: 3px solid #9200D2;
+      border-right: 3px solid #9200D2;
+      background-color: #21033C;
+      text-align: center;
+
+      box-sizing: border-box;
+      width: 300px;
+      opacity: 0;
+      transition: opacity 0.3s, height 0.3s, padding 0.3s linear 1s;
+      position: relative;
+      display: none;
+      overflow: hidden;
+
+      &.visible {
+        height: auto;
+        opacity: 1;
+      }
+
+    }
+    .about__button{
+      width: auto;
+      min-width: 90px;
+      padding: 15px;
+      &::before{
+        left: 0;
+        width: 30px;
+      }
+    }
+    .pavr_text_block {
+
+      border-top: 3px solid #9200D2;
+      border-left: 3px solid #9200D2;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      //height: 0px;
+      overflow: hidden;
+      box-shadow: 0.125rem 0.188rem 2.688rem rgba(10, 7, 21, 0.31);
+      background-color: #21033C;
+      width: 18.875rem;
+      box-sizing: border-box;
+      padding: 0;
+      opacity: 0;
+      transition: opacity 0.8s ease, height 0.8s ease, padding 0.8s ease;
+      position: relative;
+      display: none;
+      a {
+        color: rgb(255, 253, 85);
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      p {
+        color: rgb(255, 255, 255);
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.29;
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 16.2rem;
+        span {
+          color: rgb(255, 253, 85);
+        }
+      }
+      &.visible {
+        //height: 6.75rem;
+        height: auto;
+        padding: 15px;
+        opacity: 1;
+        transition: opacity 0.8s ease;
+        p {
+          opacity: 0;
+          animation: type 1.5s steps(40, end);
+          animation-delay: 1s;
+          animation-fill-mode: forwards;
+        }
+        p:nth-child(2) {
+          animation: type 1.5s steps(40, end);
+          animation-delay: 2.5s;
+          animation-fill-mode: forwards;
+        }
+        p:nth-child(3) {
+          animation: type 1.5s steps(40, end);
+          animation-delay: 4s;
+          animation-fill-mode: forwards;
+        }
+        p:nth-child(4) {
+          animation: type 1.5s steps(40, end);
+          animation-delay: 5.5s;
+          animation-fill-mode: forwards;
+        }
+        p:nth-child(5) {
+          animation: type 1.5s steps(40, end);
+          animation-delay: 7s;
+          animation-fill-mode: forwards;
+        }
+        p:nth-child(6) {
+          animation: type 1.5s steps(40, end);
+          animation-delay: 8.5s;
+          animation-fill-mode: forwards;
+        }
+      }
+    }
+  }
+
+}
+.pavr-form{
+  position: relative;
+  display: none;
+  &__warning{
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    color: red;
+    &.visible{
+      height: 18px;
+    }
+  }
+  &__input{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: calc(100% - 20px);
+    padding: 8px;
+  }
+}
+
+#pavrCurrentScore{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-weight: bold;
+  width: auto;
+  min-width: 20px;
+  background: #9200D2;
+  color: white;
+  padding: 15px;
+  display: none;
+  text-align: center;
+
+  .score_value{
+    display: none;
+    &.visible{
+      display: block;
+    }
+  }
+}
+.pavr_image-wrapper{
+  height: 325px;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+.pavr_image{
+  max-height: 100%;
+  max-width: 100%;
+}
+.pavr_text_block_game p{
+  //margin-bottom: 30px!important;
+}
+
+
+#recognizedAnswerWrapper{
+  position: relative;
+  font-weight: bold;
+  width: auto;
+  min-width: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.43);
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+#recognizedAnswer{
+  color: rgb(255, 253, 85);
+}
+#recognizedAnswerBlock.visible{
+  display: inline-flex;
+}
+
+#right-answer-wrapper{
+  font-weight: bold;
+  width: auto;
+  min-width: 20px;
+  background: #9200D2;
+  color: white;
+  padding: 15px;
+  display: none;
+  text-align: center;
+  &.visible{
+    display: inline-block;
+  }
+}
+#right-answer{
+  color: rgb(255, 253, 85);
+}
+@media only screen and (max-width: 768px) {
+  .pavr_block {
+    display: none;
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    width: 100;
+    opacity: 1;
+  }
+}
+
+@keyframes fromOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pawrStart {
+  0% {
+    transform: scaleX(0.1) scaleY(0.1);
+  }
+  30% {
+    transform: scaleX(1.20) scaleY(1.20);
+  }
+  60% {
+    transform: scaleX(1) scaleY(1);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+}
+
+@keyframes pawrFade {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pawrBounce {
+  0% {
+    transform: scaleX(1) scaleY(1);
+  }
+  40% {
+    transform: scaleX(1.1) scaleY(1.1);
+  }
+  60% {
+    transform: scaleX(1.1) scaleY(1.1);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+}
+
+@keyframes pawrBounceLong {
+  0% {
+    transform: scaleX(1) scaleY(1);
+  }
+  3% {
+    transform: scaleX(1.1) scaleY(1.1);
+  }
+  4% {
+    transform: scaleX(1.1) scaleY(1.1);
+  }
+  8% {
+    transform: scaleX(1) scaleY(1);
+  }
+}
+
+@keyframes pawrRotateLong {
+  0% {
+    transform: rotate(0deg);
+  }
+  13% {
+    transform: rotate(0deg);
+  }
+  14% {
+    transform: rotate(4deg);
+  }
+  15% {
+    transform: rotate(-5deg);
+  }
+  16% {
+    transform: rotate(3deg);
+  }
+  17% {
+    transform: rotate(-4deg);
+  }
+  18% {
+    transform: rotate(6deg);
+  }
+  19% {
+    transform: rotate(-2deg);
+  }
+  20% {
+    transform: rotate(4deg);
+  }
+  21% {
+    transform: rotate(0deg);
+  }
+}
+

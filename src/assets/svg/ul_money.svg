@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48px" height="48px">
+    <defs>
+        <style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;}</style>
+    </defs>
+    <title>ul_money</title>
+    <g id="Слой_2" data-name="Слой 2">
+        <g id="Outline_Icons" data-name="Outline Icons">
+            <circle class="cls-1" cx="16" cy="8" r="7.5"/>
+            <line class="cls-1" x1="15.5" y1="11" x2="15.5" y2="12"/>
+            <line class="cls-1" x1="15.5" y1="4" x2="15.5" y2="5"/>
+            <path class="cls-1" d="M14,9.5A1.5,1.5,0,1,0,15.5,8,1.5,1.5,0,1,1,17,6.5"/>
+            <line class="cls-1" x1="7.5" y1="19" x2="7.5" y2="20"/>
+            <line class="cls-1" x1="7.5" y1="12" x2="7.5" y2="13"/>
+            <path class="cls-1" d="M6,17.5A1.5,1.5,0,1,0,7.5,16,1.5,1.5,0,1,1,9,14.5"/>
+            <path class="cls-1" d="M8.53,8.53a7.5,7.5,0,1,0,6.95,6.95"/>
+        </g>
+    </g>
+</svg>

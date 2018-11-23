@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="190px" height="190px" viewBox="0 0 190 190" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>icn 05</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Extra-large-+--1920" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1385.000000, -1391.000000)" stroke-linecap="round">
+        <g id="desktop" transform="translate(-17.000000, 0.000000)">
+            <g id="screen-02" transform="translate(200.000000, 1101.000000)">
+                <g id="icns" transform="translate(131.000000, 290.000000)">
+                    <g id="05" transform="translate(1071.000000, 0.900474)">
+                        <rect id="Rectangle-path" stroke="#2E72F2" stroke-width="0.792" x="82.8171642" y="63.9336493" width="21.6044776" height="40.521327" rx="10.8022388"></rect>
+                        <path d="M109.447683,95.450237 C109.423114,104.04375 102.463158,111.003073 93.8723785,111.024126 C85.2890809,110.992556 78.3407473,104.036298 78.3162313,95.450237" id="Shape" stroke="#2E72F2" stroke-width="1.125"></path>
+                        <path d="M81.9169776,126.966825 L108.163186,126.966825" id="Shape" stroke="#2E72F2" stroke-width="1.125"></path>
+                        <path d="M94.5195896,127.047636 L94.5195896,110.758294" id="Shape" stroke="#2E72F2" stroke-width="0.693"></path>
+                        <polygon id="Shape" stroke="#2E72F2" stroke-width="0.639" points="131.426854 54.028436 108.022388 54.028436 108.022388 67.2132215 120.270619 67.2132215 124.97067 71.3206911 124.785478 67.2132215 131.426854 67.2132215"></polygon>
+                        <ellipse id="Oval" stroke="#2E72F2" stroke-width="0.639" cx="119.724813" cy="60.3317536" rx="1" ry="1"></ellipse>
+                        <ellipse id="Oval" stroke="#2E72F2" stroke-width="0.639" cx="114.323694" cy="60.3317536" rx="1" ry="1"></ellipse>
+                        <ellipse id="Oval" stroke="#2E72F2" stroke-width="0.639" cx="124.225746" cy="60.3317536" rx="1" ry="1"></ellipse>
+                        <rect id="Rectangle-path" stroke="#FFFFFF" stroke-width="0.792" x="81.9169776" y="63.0331754" width="21.6044776" height="40.521327" rx="10.8022388"></rect>
+                        <path d="M108.547497,94.549763 C108.526467,103.140801 101.57324,110.101956 92.9849638,110.13004 C84.3941937,110.105463 77.4370914,103.143285 77.4160448,94.549763" id="Shape" stroke="#FFFFFF" stroke-width="1.125"></path>
+                        <path d="M81.016791,126.966825 L107.263,126.966825" id="Shape" stroke="#FFFFFF" stroke-width="1.125"></path>
+                        <path d="M93.619403,126.147162 L93.619403,109.85782" id="Shape" stroke="#FFFFFF" stroke-width="0.693"></path>
+                        <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.639" points="130.526668 53.1279621 107.122201 53.1279621 107.122201 66.3127476 119.370432 66.3127476 124.070483 70.4266051 123.885291 66.3127476 130.526668 66.3127476"></polygon>
+                        <ellipse id="Oval" stroke="#FFFFFF" stroke-width="0.639" cx="118.824627" cy="60.3317536" rx="1" ry="1"></ellipse>
+                        <ellipse id="Oval" stroke="#FFFFFF" stroke-width="0.639" cx="113.423507" cy="60.3317536" rx="1" ry="1"></ellipse>
+                        <ellipse id="Oval" stroke="#FFFFFF" stroke-width="0.639" cx="124.225746" cy="60.3317536" rx="1" ry="1"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

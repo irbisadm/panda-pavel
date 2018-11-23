@@ -1,0 +1,10 @@
+{
+  "modules": false,
+  "plugins": {
+    "postcss-nested":{},
+    "cssnext":{},
+    "autoprefixer": {
+      "grid": true
+    }
+  }
+}

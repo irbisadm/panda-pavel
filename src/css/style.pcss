@@ -1,0 +1,139 @@
+@import "./font.pcss";
+@import "./normalize.css";
+@import './button_reset.pcss';
+@import './game.pcss';
+
+svg {
+  pointer-events: none;
+}
+
+
+
+.main-title{
+  font-size: 32px;
+  text-align: center;
+}
+
+.main-warning{
+  text-align: center;
+  @media all and (min-width: 768px) {
+    display: none;
+  }
+}
+
+
+body {
+  background: #0A0028;
+  color: #fff;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  overflow: hidden;
+}
+
+
+
+
+
+.about {
+
+  &__button {
+    font-family: 'gilroyextrabold', sans-serif;
+    user-select: none;
+    text-transform: uppercase;
+    position: relative;
+    flex-shrink: 1;
+    width: 180px;
+    margin: 5px 10px 5px 0;
+    border: 1px solid transparent;
+    padding: 15px 0px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-decoration: none;
+
+  }
+}
+
+.colored_button {
+  background: #9200D2;
+  color: white;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 20%;
+    background: white;
+    top: 50%;
+    transform: translateX(-40%);
+    transition: all 0.2s ease;
+  }
+  &:hover {
+    background: transparent;
+    border: 1px solid white;
+    &::before {
+      transform: translateX(-70%);
+
+    }
+
+  }
+  &:active {
+    background: #4A0269;
+    border-color: transparent;
+    &::before {
+      transform: translateX(-40%);
+    }
+  }
+}
+
+.ghost_button {
+  border: 1px solid rgba(255, 255, 255, 0.43);
+  color: white;
+
+  &:hover {
+    color: #9200D2;
+    border: 1px solid #9200D2;
+  }
+  &:active {
+    color: white;
+    background-color: #4A0269;
+    border: 1px solid transparent;
+  }
+}
+
+.borderless_button {
+  color: white;
+  border: 1px solid transparent;
+  padding: 15px 0px;
+  width: 180px;
+  padding-left: 0;
+  text-align: left;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 20%;
+    background: white;
+    top: 50%;
+    transform: translateX(-140%);
+    transition: all 0.2s ease;
+    opacity: 0;
+  }
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+  &:active {
+    color: #4A0269;
+    &::before {
+      background: #4A0269;
+
+      transform: translateX(-100%);
+    }
+  }
+}
+

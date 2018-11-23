@@ -1,0 +1,85 @@
+.pavr_block
+  .pavr_text_area
+    .pavr_text_block.pavr_text_block_first
+      p Псс! Эй, ты! Да, ты! Хочешь
+      p поиграть в игру с интерактивным
+      p голосовым ботом?
+
+    .pavr_btn_block.pavr_btn_block_first
+      button.about__button.colored_button.pavr_btn_ok Да!
+      button.about__button.ghost_button.pavr_btn_no Нет  :(
+
+    .pavr_text_block.pavr_text_block_err
+      p Очень жаль :(
+
+    .pavr_text_block#disconectError
+      p Что-то пошло не так :(
+      p Свяжись, пожалуйста, с создателями.
+
+
+    .pavr_text_block.pavr_text_block_ok
+      p Отлично! Сядь поудобнее
+      p  и оставь свой номер
+      p телефона&nbsp;
+        span (для идентификации).
+
+      .pavr-form
+        input.pavr-form__input#myNumberInput(type="text" placeholder="+79000000000")
+        .pavr-form__warning#regexCheckWarn Проверь введенный номер!
+        .pavr-form__warning#alreadyPlayedCheckWarn Этот номер уже участвовал!
+        .pavr-form__warning#socketCheckWarn Кажется мы не смогли вас идентифицировать :(
+        .pavr-form__warning#socketError Чтото случилось с нашим сервером, сообщите нам +7 (977) 857 67 03
+
+    .pavr_btn_block.pavr_btn_block_second
+      button.about__button.colored_button#myNumberButton Вот мой номер
+
+    .pavr_text_block.pavr_text_block_third
+      p Ура! Я связал твой браузер с&nbsp;
+      p указанным номером, звони с него на&nbsp;
+      p  
+        span +7 800 511 28 15&nbsp;
+        | и начнем игру&nbsp;
+      p (звонок бесплатный).
+
+    .pavr_text_block.pavr_text_block_game
+      span#pavrCurrentScore
+        .score_value.visible 0 баллов
+      //p Что зашифровано на
+      //p изображении ниже?
+      //p Это может быть слово
+      //p или словосочетание.
+
+      .pavr_image-wrapper
+
+      span#right-answer-wrapper Правильный ответ:&nbsp;
+        span#right-answer
+
+    span.pavr_btn_block.pavr_btn_block_answer#recognizedAnswerBlock
+      span#recognizedAnswerWrapper Ваш ответ:&nbsp;
+        span#recognizedAnswer
+
+    .pavr_text_block.pavr_text_block_finish
+      p Поздравляю! Набрано &nbsp;
+        span#pavrFinalScore
+    .pavr_btn_block.pavr_btn_block_finish
+      button.about__button.colored_button.pawr-finish-button Спасибо! :)
+
+    .pavr_text_block.pavr_text_block_finishBad
+      p Набрано&nbsp;
+        span 0 баллов&nbsp;
+        |, ящер в&nbsp;
+      p шоке.
+
+    .pavr_btn_block.pavr_btn_block_finishBad
+      button.about__button.colored_button.pawr-finish-button Ну вот :(
+
+  .pavr_av_block
+    .pavr_av_block_c1
+    .pavr_av_block_c2
+    .pavr_av_block_c3
+    .pavr_av_block_c4
+    .pavr_av_block_c5
+    .pavr_av_block_img
+  .pavr_t
+    .pavr_t_title Павел
+    .pavr_t_descr консультант-рептилоид

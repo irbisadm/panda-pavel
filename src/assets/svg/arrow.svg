@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="18px" viewBox="0 0 15 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>down arrw</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="INTERCOM-Source-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-73.000000, -808.000000)">
+        <g id="screen-01" fill="#9B9B9B">
+            <g id="left-fixed-menu-copy">
+                <path d="M85.4644661,818.12132 L71.8786797,818.12132 L71.8786797,816.12132 L85.4644661,816.12132 L80.636039,811.292893 L82.0502525,809.87868 L89.1213203,816.949747 L88.9497475,817.12132 L89.1213203,817.292893 L82.0502525,824.363961 L80.636039,822.949747 L85.4644661,818.12132 Z" id="down-arrw" transform="translate(80.500000, 817.121320) scale(-1, 1) rotate(90.000000) translate(-80.500000, -817.121320) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

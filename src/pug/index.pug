@@ -1,0 +1,38 @@
+doctype html
+html
+    head
+        title Pavel demo
+        meta(charset="UTF-8")
+        meta(name="robots" content="noindex,nofollow")
+        meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+        link(rel="apple-touch-icon", sizes="180x180", href="../assets/apple-touch-icon.png")
+        link(rel="icon", type="image/png", sizes="32x32", href="../assets/favicon-32x32.png")
+        link(rel="icon", type="image/png", sizes="16x16", href="../assets/favicon-16x16.png")
+        link(rel="manifest", href="../assets/site.webmanifest")
+        link(rel="mask-icon", href="../assets/safari-pinned-tab.svg", color="#5bbad5")
+        link(rel="shortcut icon", href="../assets/favicon.ico")
+        meta(name="msapplication-config", content="dist/static/browserconfig.xml")
+        meta(name="theme-color", content="#ffffff")
+        meta(property='og:type', content='website')
+        meta(property="og:locale:alternate" content="ru_RU")
+        link(rel="stylesheet", href="../css/style.pcss?q=hfhjyfuyfuyfa")
+        //link(href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&amp;subset=cyrillic" rel="stylesheet")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.min.js")
+
+    body
+
+        h1.main-title Привет участникам Panda Meetup
+        p.main-warning Для игры нужно зайти с устройства большего размера :3
+        include include/game.pug
+
+
+        //- Audio for Pavel game
+        iframe(src="../assets/audio/silence.mp3" allow="autoplay" style="width:0;height:0; border:none; visibility: hidden" id="audio")
+
+        audio#typingSound(playsinline)
+            source(src="../assets/audio/typing-sound.mp3" type="audio/mpeg"  playsinline)
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js")
+        //script(src="../js/index.js?q=hfhjyfuyfuyfab", async, defer)
+        script(src="../js/pavr.js?q=hfhjyfuyfsduyfab", async, defer)
